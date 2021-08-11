@@ -1,0 +1,57 @@
+﻿@model SistemaWebVuelos.Models.Vuelo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Desea eliminar?</h3>
+<div>
+    <h4>Vuelo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.HiddenFor(model => model.Id)
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Origen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Origen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Matricula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Matricula)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="si" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a Index", "Index")
+        </div>
+    }
+</div>

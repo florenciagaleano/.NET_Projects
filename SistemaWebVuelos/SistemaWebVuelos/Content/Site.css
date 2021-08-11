@@ -1,0 +1,33 @@
+﻿body {
+    text-align: center;
+}
+
+.formato{
+    background-color:black;
+    color:white;
+}
+
+#barra{
+    background-color:lightblue;
+    color:white;
+}
+
+footer{
+    font-family:sans-serif;
+}
+
+.formato,
+h1{
+    font-weight:bold;
+    font-size:larger;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #cecfd5;
+    padding: 10px 15px;
+}
